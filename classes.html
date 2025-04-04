@@ -4,13 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classes</title>
-    <link rel="stylesheet" href="secondary.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <h1>Pilates Classes</h1>
+  <body class="secondary">
+    <!-- MENU -->
+    <nav id="mini-nav">
+      <div class="dropdown">
+        <span id="nav-icon">≡</span>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about-filomena.html">About Filomena</a>
+          <a href="about-pilates.html">What is Pilates?</a>
+          <a href="about-faq.html">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="index.html#services">Services</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+    </nav>
 
-      <h2>Group Classes</h2>
+    <nav id="full-nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-content">
+          <a href="about-filomena.html">About Filomena</a>
+          <a href="about-pilates.html">What is Pilates?</a>
+          <a href="about-faq.html">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <a href="index.html#services">Services</a>
+      <a href="events.html">Events</a>
+    </nav>
+    <!--  -->
+
+    <div class="container">
+      <h1 class="secondary-title">Pilates Classes</h1>
+
+      <h2 class="secondary-sub-title">Group Classes</h2>
 
       <p>
         These classes offer a full-body workout combining classical and
@@ -30,14 +62,18 @@
         <li>Saturdays, from 11:55 to 12:55</li>
       </ul>
 
-      <p>Each class £10.</p>
-      <p>Booking options:</p>
+      <p>Please arrive 5 minutes earlier so that we can start on time.</p>
+      <p>
+        Make sure to wear comfortable clothes such, as a t-shirt, sports
+        leggings, and Pilates socks.
+      </p>
+
+      <p><b>Booking options - each class £10:</b></p>
       <ul>
         <li>
-          <a href="index.html#contact">Contact us</a> - we accept bank transfers
-          or cash.
+          <a href="#contact">Contact us</a> - we accept bank transfers or cash.
           <br />
-          Offer for <b>new clients</b>: 3 classes for £20.
+          <b>Offer for new clients</b>: 3 classes for £20.
         </li>
         <li>
           <a href="https://pilateswithfilomena.eventbrite.co.uk/">Eventbrite</a>
@@ -55,7 +91,7 @@
 
       <br />
 
-      <h2>Private Classes</h2>
+      <h2 class="secondary-sub-title">Private Classes</h2>
 
       <p>
         Mat-based or standing Pilates classes offer tailored solutions for
@@ -63,13 +99,13 @@
         sculpting. Our personalized attention maximizes results.
       </p>
       <p>
-        <a href="index.html#contact">Contact us</a> to know more, and for
-        pricing and availability.
+        <a href="#contact">Contact us</a> to know more, and for pricing and
+        availability.
       </p>
 
       <br />
 
-      <h2>Private Small Group Classes</h2>
+      <h2 class="secondary-sub-title">Private Small Group Classes</h2>
 
       <p>
         Mat-based and standing Pilates classes. These classes are well-rounded
@@ -77,9 +113,33 @@
         groups, up to 3 people.
       </p>
       <p>
-        <a href="index.html#contact">Contact us</a> to know more, and for
-        pricing and availability.
+        <a href="#contact">Contact us</a> to know more, and for pricing and
+        availability.
       </p>
     </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <header>
+        <h2>Contact Us!</h2>
+        <p>
+          email:
+          <a href="mailto:pilateswithfilomena@gmail.com"
+            >pilateswithfilomena@gmail.com</a
+          >
+          <br />
+          phone: <a href="tel:07379841186">07379841186</a>
+        </p>
+      </header>
+      <footer>
+        Contact us by email or phone (including WhatsApp).
+        <br />
+        Currently based in Wembley.
+        <br />
+        <br />
+        <h3>Take action: Extend your mat for your health.</h3>
+      </footer>
+    </section>
+    <!--  -->
   </body>
 </html>
