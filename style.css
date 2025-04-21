@@ -167,10 +167,32 @@ li:not(:last-child) {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 2em;
   color: white;
   position: relative;
   font-size: clamp(1.5rem, 2.5vw, 4rem);
+  /* Add the following back when removing scrolling-banner */
+  /* padding-bottom: 2em; */
+}
+
+/* --- scrolling-banner --- */
+.scrolling-banner {
+  width: 100%;
+  background-color: rgb(180, 0, 180);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.scrolling-text {
+  text-align: center !important;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+/* --- scrolling-banner --- */
+
+.no-style-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 #banner-text {
