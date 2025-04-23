@@ -170,12 +170,13 @@ li:not(:last-child) {
   color: white;
   position: relative;
   font-size: clamp(1.5rem, 2.5vw, 4rem);
-  /* Add the following back when removing scrolling-banner */
-  /* padding-bottom: 2em; */
+  padding-bottom: 2em;
 }
 
 /* --- scrolling-banner --- */
 .scrolling-banner {
+  z-index: 1;
+  margin-top: -2em;
   width: 100%;
   background-color: rgb(180, 0, 180);
   text-transform: uppercase;
