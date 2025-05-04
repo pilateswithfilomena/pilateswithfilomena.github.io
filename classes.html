@@ -4,10 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Classes</title>
+    <title>Classes - Pilates with Filomena</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .cards-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding-bottom: 47px;
+      }
+
+      .card {
+        flex: 0 0 auto;
+        width: 340px;
+        height: 340px;
+        background-color: rgb(180, 0, 180);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      .card h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.1em;
+      }
+
+      .card .price {
+        letter-spacing: 0.1em;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+      }
+
+      .card .price .sub-price {
+        font-size: 1rem;
+      }
+
+      .card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        font-size: 0.875rem;
+        color: #ffffff;
+        flex-grow: 1;
+      }
+
+      .card ul li {
+        font-size: 1.5em;
+        margin-bottom: 0.25rem;
+        position: relative;
+        padding-left: 1rem;
+        color: #ffffff;
+      }
+
+      .card ul li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+        color: #ffffff;
+      }
+
+      .card .buy-link {
+        display: inline-block;
+        margin-top: auto;
+        padding: 0.5rem 1rem;
+        background-color: #ffffff;
+        color: rgb(180, 0, 180);
+        text-decoration: none;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .card .buy-link:hover {
+        background-color: rgb(150, 0, 150);
+        color: #ffffff;
+      }
+
+      .card .buy-link svg {
+        margin-left: 0.5rem;
+        width: 1em;
+        height: 1em;
+        fill: currentColor;
+      }
+
+      .svg-sprite {
+        display: none;
+      }
+    </style>
   </head>
   <body class="secondary">
+    <svg class="svg-sprite">
+      <symbol id="external-link-icon" viewBox="0 0 24 24">
+        <path
+          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59L7.76 13.83l1.41 1.41L19 6.41V10h2V3h-7z"
+        />
+      </symbol>
+    </svg>
+
     <!-- MENU -->
     <nav id="mini-nav">
       <div class="dropdown">
@@ -42,7 +148,7 @@
     </nav>
     <!--  -->
 
-    <div class="container">
+    <div class="container" style="padding-bottom: 20px">
       <h1 class="secondary-title">Pilates Classes</h1>
 
       <h2 class="secondary-sub-title">Gym Group Classes</h2>
@@ -71,48 +177,139 @@
         leggings, and Pilates socks.
       </p>
 
-      <p>We have a 24 hour cancellation policy.</p>
-
-      <p><b>Booking options - each class £10:</b></p>
-      <ul>
-        <li>
-          <a href="#contact">Contact us</a> - we accept bank transfers or cash.
-          <br />
-          <br />
-          <b>Welcome offer for new clients</b>: 3 classes for £20 (aprox. £6.67
-          each).
-          <br />
-          <br />
-          <b>4 classes bundle</b>: £35 (£8.75 each).
-          <ul>
-            <li style="line-height: 1">Expires 6 weeks after purchase</li>
-            <li style="line-height: 1">Recommended for 1 class per week</li>
-            <li style="line-height: 1">1 late cancellation</li>
-          </ul>
-          <b>8 classes bundle</b>: £65 (aprox. £8.13 each).
-          <ul>
-            <li style="line-height: 1">Expires 6 weeks after purchase</li>
-            <li style="line-height: 1">Recommended for 2 classes per week</li>
-            <li style="line-height: 1">1 late cancellation</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://pilateswithfilomena.eventbrite.co.uk/">Eventbrite</a>
-          - they charge a booking fee on top of the class price, but support
-          card payments.
-        </li>
-        <li>
-          <a href="https://www.wembleyfitness.co.uk/classes">Wembley Fitness</a>
-          - you can book classes or contact them to know which memberships
-          include our classes.
-        </li>
-      </ul>
-
-      <p>Intro to Pilates pack coming soon!</p>
-
       <br />
+      <h1>Booking Options:</h1>
+    </div>
 
-      <h2 class="secondary-sub-title">Private Classes</h2>
+    <div class="cards-flex-container">
+      <div class="card">
+        <h3>Welcome Offer:<br />Buy 2 get 1 free</h3>
+        <div class="price">
+          £20
+          <span class="sub-price">(£6.67 per class)</span>
+        </div>
+        <ul>
+          <li>New clients only</li>
+          <li>3 classes for price of 2</li>
+          <li>24 hour cancellation</li>
+          <li>1 month expiration</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          data-option="welcome pack"
+          data-body="the welcome pack for £20"
+          class="buy-link"
+          target="_blank"
+          >Buy</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>1 class</h3>
+        <div class="price">£10</div>
+        <ul>
+          <li>24 hour cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          data-option="1 class"
+          data-body="1 class for £10"
+          class="buy-link"
+          target="_blank"
+          >Buy</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>1 class - Eventbrite</h3>
+        <div class="price">£11.55</div>
+        <ul>
+          <li>24 hour cancellation</li>
+          <li>Price includes Eventbrite non-refundable £1.55 booking fee</li>
+        </ul>
+        <a
+          href="https://pilateswithfilomena.eventbrite.co.uk/"
+          class="buy-link"
+          target="_blank"
+          >Book on Eventbrite<svg><use href="#external-link-icon"></use></svg>
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>4 classes pack</h3>
+        <div class="price">
+          £35
+          <span class="sub-price">(£8.75 per class)</span>
+        </div>
+        <ul>
+          <li>2 months expiration</li>
+          <li>24 hour cancellation</li>
+          <li>1 late cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          data-option="4 classes pack"
+          data-body="a pack of 4 classes for £35"
+          class="buy-link"
+          target="_blank"
+          >Buy</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>8 classes pack</h3>
+        <div class="price">
+          £65
+          <span class="sub-price">(£8.23 per class)</span>
+        </div>
+        <ul>
+          <li>3 months expiration</li>
+          <li>24 hour cancellation</li>
+          <li>1 late cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          data-option="8 classes pack"
+          data-body="a pack of 8 classes for £65"
+          class="buy-link"
+          target="_blank"
+          >Buy</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Wembley Fitness App</h3>
+        <ul>
+          <li>Listed as <i>Pilates (Contrology)</i></li>
+          <li>
+            Managed by Wembley Fitness, contact them for prices, memberships,
+            and cancellation policies
+          </li>
+        </ul>
+        <a
+          href="https://www.wembleyfitness.co.uk/classes"
+          class="buy-link"
+          target="_blank"
+          >Book on Wembley Fitness<svg>
+            <use href="#external-link-icon"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="card" style="justify-content: flex-start !important">
+        <h3>Intro to Pilates Pack</h3>
+        <ul style="flex-grow: 0">
+          <li>Learn the basics of Pilates</li>
+        </ul>
+        <h1 style="font-size: 3em; text-align: center; width: 100%">
+          Coming soon!
+        </h1>
+      </div>
+    </div>
+
+    <br />
+    <div class="container">
+      <h1>Private Classes</h1>
 
       <p>
         Mat-based or standing Pilates classes offer tailored solutions for
@@ -120,10 +317,69 @@
         sculpting. Our personalized attention maximizes results.
       </p>
       <p>
-        <a href="#contact">Contact us</a> to know more, and for pricing and
-        availability.
+        Currently only in person classes are available.
+        <u>Online classes coming soon!</u>
       </p>
-
+      <p>Classes can take place in the comfort of your home.</p>
+    </div>
+    <div class="cards-flex-container">
+      <div class="card">
+        <h3>1 class</h3>
+        <div class="price">from £55 to £75</div>
+        <ul>
+          <li>Price depends on location/service</li>
+          <li>1-2-1 coaching</li>
+          <li>60 minutes session</li>
+          <li>24 hour cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          class="buy-link"
+          data-option="1 private class"
+          data-body="one private class"
+          data-private="true"
+          target="_blank"
+          >Email Us</a
+        >
+      </div>
+      <div class="card">
+        <h3>8 classes - 5% off</h3>
+        <ul>
+          <li>Bespoke exercise plan</li>
+          <li>2 months expiration</li>
+          <li>24 hour cancellation</li>
+          <li>1 late cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          class="buy-link"
+          data-option="8 private class"
+          data-body="a pack of 8 private classes"
+          data-private="true"
+          target="_blank"
+          >Email Us</a
+        >
+      </div>
+      <div class="card">
+        <h3>12 classes - 10% off</h3>
+        <ul>
+          <li>Bespoke exercise plan</li>
+          <li>3 months expiration</li>
+          <li>24 hour cancellation</li>
+          <li>2 late cancellations</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          class="buy-link"
+          data-option="12 private class"
+          data-body="a pack of 12 private classes"
+          data-private="true"
+          target="_blank"
+          >Email Us</a
+        >
+      </div>
+    </div>
+    <div class="container">
       <br />
 
       <h2 class="secondary-sub-title">Private Small Group Classes</h2>
@@ -131,12 +387,74 @@
       <p>
         Mat-based and standing Pilates classes. These classes are well-rounded
         full-body workouts, ideal for strengthening or sculpting. For small
-        groups, up to 3 people.
+        groups, from 2 to 3 people.
       </p>
       <p>
-        <a href="#contact">Contact us</a> to know more, and for pricing and
-        availability.
+        Currently only in person classes are available.
+        <u>Online classes coming soon!</u>
       </p>
+      <p>Classes will take place in the comfort of your home.</p>
+    </div>
+    <div class="cards-flex-container">
+      <div class="card">
+        <h3>1 class</h3>
+        <div class="price">from £35 to £55/person</div>
+        <ul>
+          <li>Price depends on location/service</li>
+          <li>For 2 to 3 people</li>
+          <li>Personalized coaching</li>
+          <li>60 minutes session</li>
+          <li>24 hour cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          class="buy-link"
+          data-option="1 private group class"
+          data-body="one private group class"
+          data-private="true"
+          data-group="true"
+          target="_blank"
+          >Email Us</a
+        >
+      </div>
+      <div class="card">
+        <h3>8 classes - 5% off</h3>
+        <ul>
+          <li>Bespoke exercise plan</li>
+          <li>2 months expiration</li>
+          <li>24 hour cancellation</li>
+          <li>1 late cancellation</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          class="buy-link"
+          data-option="8 private group classes"
+          data-body="a pack of 8 private group classes"
+          data-private="true"
+          data-group="true"
+          target="_blank"
+          >Email Us</a
+        >
+      </div>
+      <div class="card">
+        <h3>12 classes - 10% off</h3>
+        <ul>
+          <li>Bespoke exercise plan</li>
+          <li>3 months expiration</li>
+          <li>24 hour cancellation</li>
+          <li>2 late cancellations</li>
+        </ul>
+        <a
+          href="mailto:pilateswithfilomena@gmail.com"
+          class="buy-link"
+          data-option="12 private group classes"
+          data-body="a pack of 12 private group classes"
+          data-private="true"
+          data-group="true"
+          target="_blank"
+          >Email Us</a
+        >
+      </div>
     </div>
 
     <!-- CONTACT -->
@@ -162,5 +480,41 @@
       </footer>
     </section>
     <!--  -->
+
+    <script>
+      const targetEmail = "pilateswithfilomena@gmail.com";
+      const buyLinks = document.querySelectorAll(".buy-link");
+
+      buyLinks.forEach((link) => {
+        const option = link.dataset.option;
+        if (!option) {
+          return;
+        }
+        const optionBody = link.dataset.body;
+        const isPrivate = link.dataset.private === "true";
+        const privateMessage = isPrivate
+          ? `Preferred time and date:
+Location:`
+          : "";
+        const isGroup = link.dataset.group === "true";
+        const groupMessage = isGroup ? "Group size:\n" : "";
+
+        const subject = encodeURIComponent(`Buy ${option}`);
+        const body = encodeURIComponent(
+          `Hi Filomena,
+
+I would like to buy ${optionBody}.
+
+<INSTRUCTIONS: PLEASE LIST THE FOLLOWING>
+Full name:
+Payment method: <BANK TRANSFER OR CASH ON FIRST CLASS>
+${groupMessage}${privateMessage}
+
+`
+        );
+
+        link.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+      });
+    </script>
   </body>
 </html>
