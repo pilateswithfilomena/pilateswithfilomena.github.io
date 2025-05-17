@@ -5,4 +5,4 @@ My [personal website](https://pilateswithfilomena.github.io) for teaching Pilate
 ## Remember
 
 1. `./scripts/generate.py` to generate root HTML
-2. Update `sitemap.txt` for any newly added page
+2. Update `sitemap.xml` for any newly added page
