@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'header.jinja' %}
+    <title>Events - Pilates with Filomena</title>
+  </head>
+  <body class="secondary">
+    {% with location='events' %} {% include 'menu.jinja' %} {% endwith %}
+
+    <div class="container">
+      <h1 class="secondary-title">Events</h1>
+      <h2 class="secondary-sub-title" style="max-width: 400px">
+        <a href="event1.html" class="no-style-link"
+          ><img src="photos/f.pilates.unite.students.jpg" />
+          Pilates With Filomena is coming to Unite Students on the 1st of May, 2025.
+        </a>
+      </h2>
+    </div>
+
+    {% include 'contact.jinja' %}
+  </body>
+</html>

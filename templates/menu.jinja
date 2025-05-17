@@ -1,0 +1,56 @@
+<!-- MENU -->
+<nav id="mini-nav">
+  <div class="dropdown">
+    <span id="nav-icon">≡</span>
+    <div class="dropdown-content">
+      {% if location != 'home' %}
+      <a href="index.html">Home</a>
+      {% endif %} {% if location != 'about-filomena' %}
+      <a href="about-filomena.html">About Filomena</a>
+      {% endif %} {% if location != 'our-mission' %}
+      <a href="our-mission.html">Our Mission</a>
+      {% endif %} {% if location != 'about-pilates' %}
+      <a href="about-pilates.html">What is Pilates?</a>
+      {% endif %} {% if location != 'about-faq' %}
+      <a href="about-faq.html">FAQ</a>
+      {% endif %}
+      <a href="#contact">Contact</a>
+      {% if location != 'classes' %}
+      <a href="classes.html">Classes</a>
+      {% endif %}
+      <a href="index.html#services">Services</a>
+      {% if location != 'events' %}
+      <a href="events.html">Events</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
+
+<nav id="full-nav">
+  {% if location != 'home' %}
+  <a href="index.html">Home</a>
+  {% endif %}
+  <div class="dropdown">
+    <a href="#">About</a>
+    <div class="dropdown-content">
+      {% if location != 'about-filomena' %}
+      <a href="about-filomena.html">About Filomena</a>
+      {% endif %} {% if location != 'our-mission' %}
+      <a href="our-mission.html">Our Mission</a>
+      {% endif %} {% if location != 'about-pilates' %}
+      <a href="about-pilates.html">What is Pilates?</a>
+      {% endif %} {% if location != 'about-faq' %}
+      <a href="about-faq.html">FAQ</a>
+      {% endif %}
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  {% if location != 'classes' %}
+  <a href="classes.html">Classes</a>
+  {% endif %}
+  <a href="index.html#services">Services</a>
+  {% if location != 'events' %}
+  <a href="events.html">Events</a>
+  {% endif %}
+</nav>
+<!--  -->

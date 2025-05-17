@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="style.css" />
+    {% include 'header.jinja' %}
     <title>Classes - Pilates with Filomena</title>
     <style>
       .cards-flex-container {
@@ -114,58 +111,7 @@
       </symbol>
     </svg>
 
-     <!-- MENU -->
-<nav id="mini-nav">
-  <div class="dropdown">
-    <span id="nav-icon">≡</span>
-    <div class="dropdown-content">
-      
-      <a href="index.html">Home</a>
-       
-      <a href="about-filomena.html">About Filomena</a>
-       
-      <a href="our-mission.html">Our Mission</a>
-       
-      <a href="about-pilates.html">What is Pilates?</a>
-       
-      <a href="about-faq.html">FAQ</a>
-      
-      <a href="#contact">Contact</a>
-      
-      <a href="index.html#services">Services</a>
-      
-      <a href="events.html">Events</a>
-      
-    </div>
-  </div>
-</nav>
-
-<nav id="full-nav">
-  
-  <a href="index.html">Home</a>
-  
-  <div class="dropdown">
-    <a href="#">About</a>
-    <div class="dropdown-content">
-      
-      <a href="about-filomena.html">About Filomena</a>
-       
-      <a href="our-mission.html">Our Mission</a>
-       
-      <a href="about-pilates.html">What is Pilates?</a>
-       
-      <a href="about-faq.html">FAQ</a>
-      
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-  
-  <a href="index.html#services">Services</a>
-  
-  <a href="events.html">Events</a>
-  
-</nav>
-<!--  --> 
+    {% with location='classes' %} {% include 'menu.jinja' %} {% endwith %}
 
     <div class="container" style="padding-bottom: 20px">
       <h1 class="secondary-title">Pilates Classes</h1>
@@ -458,29 +404,7 @@
       </div>
     </div>
 
-    <!-- CONTACT -->
-<section id="contact">
-  <header>
-    <h2>Contact Us!</h2>
-    <p>
-      email:
-      <a href="mailto:pilateswithfilomena@gmail.com"
-        >pilateswithfilomena@gmail.com</a
-      >
-      <br />
-      phone: <a href="tel:07379841186">07379841186</a>
-    </p>
-  </header>
-  <footer>
-    Contact us by email or phone (including WhatsApp).
-    <br />
-    Currently based in Wembley.
-    <br />
-    <br />
-    <h3>Take action: Extend your mat for your health.</h3>
-  </footer>
-</section>
-<!--  -->
+    {% include 'contact.jinja' %}
 
     <script>
       const targetEmail = "pilateswithfilomena@gmail.com";
