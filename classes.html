@@ -119,14 +119,7 @@
           <li>24 hour cancellation</li>
           <li>1 month expiration</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          data-option="welcome pack"
-          data-body="the welcome pack for £20"
-          class="buy-link"
-          target="_blank"
-          >Buy</a
-        >
+        <a href="buy-classes.html?option=welcome-pack" class="buy-link">Buy</a>
       </div>
 
       <div class="card">
@@ -135,14 +128,7 @@
         <ul>
           <li>24 hour cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          data-option="1 class"
-          data-body="1 class for £10"
-          class="buy-link"
-          target="_blank"
-          >Buy</a
-        >
+        <a href="buy-classes.html?option=1-class" class="buy-link">Buy</a>
       </div>
 
       <div class="card">
@@ -168,14 +154,7 @@
           <li>24 hour cancellation</li>
           <li>1 late cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          data-option="4 classes pack"
-          data-body="a pack of 4 classes for £35"
-          class="buy-link"
-          target="_blank"
-          >Buy</a
-        >
+        <a href="buy-classes.html?option=4-classes" class="buy-link">Buy</a>
       </div>
 
       <div class="card">
@@ -189,14 +168,7 @@
           <li>24 hour cancellation</li>
           <li>1 late cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          data-option="8 classes pack"
-          data-body="a pack of 8 classes for £65"
-          class="buy-link"
-          target="_blank"
-          >Buy</a
-        >
+        <a href="buy-classes.html?option=8-classes" class="buy-link">Buy</a>
       </div>
 
       <div class="card">
@@ -245,15 +217,7 @@
           <li>60 minutes session</li>
           <li>24 hour cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          class="buy-link"
-          data-option="1 private class"
-          data-body="one private class"
-          data-private="true"
-          target="_blank"
-          >Email Us</a
-        >
+        <a href="enquire.html?option=1-private-class" class="buy-link">Enquire Now</a>
       </div>
       <div class="card">
         <h3>8 classes - 5% off</h3>
@@ -263,15 +227,7 @@
           <li>24 hour cancellation</li>
           <li>1 late cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          class="buy-link"
-          data-option="8 private class"
-          data-body="a pack of 8 private classes"
-          data-private="true"
-          target="_blank"
-          >Email Us</a
-        >
+        <a href="enquire.html?option=8-private-classes" class="buy-link">Enquire Now</a>
       </div>
       <div class="card">
         <h3>12 classes - 10% off</h3>
@@ -281,15 +237,7 @@
           <li>24 hour cancellation</li>
           <li>2 late cancellations</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          class="buy-link"
-          data-option="12 private class"
-          data-body="a pack of 12 private classes"
-          data-private="true"
-          target="_blank"
-          >Email Us</a
-        >
+        <a href="enquire.html?option=12-private-classes" class="buy-link">Enquire Now</a>
       </div>
     </div>
     <div class="container">
@@ -318,16 +266,7 @@
           <li>60 minutes session</li>
           <li>24 hour cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          class="buy-link"
-          data-option="1 private group class"
-          data-body="one private group class"
-          data-private="true"
-          data-group="true"
-          target="_blank"
-          >Email Us</a
-        >
+        <a href="enquire.html?option=1-private-group-class" class="buy-link">Enquire Now</a>
       </div>
       <div class="card">
         <h3>8 classes - 5% off</h3>
@@ -337,16 +276,7 @@
           <li>24 hour cancellation</li>
           <li>1 late cancellation</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          class="buy-link"
-          data-option="8 private group classes"
-          data-body="a pack of 8 private group classes"
-          data-private="true"
-          data-group="true"
-          target="_blank"
-          >Email Us</a
-        >
+        <a href="enquire.html?option=8-private-group-classes" class="buy-link">Enquire Now</a>
       </div>
       <div class="card">
         <h3>12 classes - 10% off</h3>
@@ -356,16 +286,7 @@
           <li>24 hour cancellation</li>
           <li>2 late cancellations</li>
         </ul>
-        <a
-          href="mailto:pilateswithfilomena@gmail.com"
-          class="buy-link"
-          data-option="12 private group classes"
-          data-body="a pack of 12 private group classes"
-          data-private="true"
-          data-group="true"
-          target="_blank"
-          >Email Us</a
-        >
+        <a href="enquire.html?option=12-private-group-classes" class="buy-link">Enquire Now</a>
       </div>
     </div>
 
@@ -392,41 +313,5 @@
   </footer>
 </section>
 <!--  -->
-
-    <script>
-      const targetEmail = "pilateswithfilomena@gmail.com";
-      const buyLinks = document.querySelectorAll(".buy-link");
-
-      buyLinks.forEach((link) => {
-        const option = link.dataset.option;
-        if (!option) {
-          return;
-        }
-        const optionBody = link.dataset.body;
-        const isPrivate = link.dataset.private === "true";
-        const privateMessage = isPrivate
-          ? `Preferred time and date:
-Location:`
-          : "";
-        const isGroup = link.dataset.group === "true";
-        const groupMessage = isGroup ? "Group size:\n" : "";
-
-        const subject = encodeURIComponent(`Buy ${option}`);
-        const body = encodeURIComponent(
-          `Hi Filomena,
-
-I would like to buy ${optionBody}.
-
-<INSTRUCTIONS: PLEASE LIST THE FOLLOWING>
-Full name:
-Payment method: <BANK TRANSFER OR CASH ON FIRST CLASS>
-${groupMessage}${privateMessage}
-
-`
-        );
-
-        link.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
-      });
-    </script>
   </body>
 </html>
