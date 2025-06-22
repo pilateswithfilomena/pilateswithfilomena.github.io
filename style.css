@@ -171,6 +171,10 @@ li:not(:last-child) {
   position: relative;
   font-size: clamp(1.5rem, 2.5vw, 4rem);
   padding-bottom: 2em;
+  background-image: url("photos/kampus-production-a-woman-guiding-an-exercising-man-6111580.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 /* --- scrolling-banner --- */
