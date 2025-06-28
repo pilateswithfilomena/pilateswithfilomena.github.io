@@ -1,6 +1,6 @@
 # Pilates with Filomena
 
-My [personal website](https://pilateswithfilomena.github.io) for teaching Pilates.
+My [personal website](https://pilateswithfilomena.com) for teaching Pilates.
 
 ## Remember
 
