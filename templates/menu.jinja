@@ -4,7 +4,7 @@
     <span id="nav-icon">≡</span>
     <div class="dropdown-content">
       {% if location != 'home' %}
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       {% endif %} {% if location != 'about-filomena' %}
       <a href="about-filomena.html">About Filomena</a>
       {% endif %} {% if location != 'our-mission' %}
@@ -18,7 +18,7 @@
       {% if location != 'classes' %}
       <a href="classes.html">Classes</a>
       {% endif %}
-      <a href="index.html#services">Services</a>
+      <a href="/#services">Services</a>
       {% if location != 'events' %}
       <a href="events.html">Events</a>
       {% endif %}
@@ -28,10 +28,10 @@
 
 <nav id="full-nav">
   {% if location != 'home' %}
-  <a href="index.html">Home</a>
+  <a href="/">Home</a>
   {% endif %}
   <div class="dropdown">
-    <a href="#">About</a>
+    <a>About</a>
     <div class="dropdown-content">
       {% if location != 'about-filomena' %}
       <a href="about-filomena.html">About Filomena</a>
@@ -48,7 +48,7 @@
   {% if location != 'classes' %}
   <a href="classes.html">Classes</a>
   {% endif %}
-  <a href="index.html#services">Services</a>
+  <a href="/#services">Services</a>
   {% if location != 'events' %}
   <a href="events.html">Events</a>
   {% endif %}
