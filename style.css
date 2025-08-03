@@ -72,6 +72,7 @@ ol {
 }
 
 ul {
+  font-size: 1.1rem;
   list-style-type: disc;
 }
 
@@ -80,7 +81,7 @@ ol {
 }
 
 li {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: black;
 }
@@ -293,7 +294,8 @@ body.secondary p {
 }
 
 h3 {
-  text-transform: uppercase;
+  /* text-transform: uppercase;
+  font-variant-caps: small-caps; */
 }
 
 @media screen and (max-width: 600px) {
