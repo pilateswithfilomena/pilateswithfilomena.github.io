@@ -298,6 +298,19 @@ h3 {
   font-variant-caps: small-caps; */
 }
 
+h3 a {
+  text-decoration: none;
+  color: inherit;
+  /* cursor: default; */
+}
+
+h3 a:hover,
+h3 a:focus,
+h3 a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (max-width: 600px) {
   .quote {
     font-size: 1.5em;
