@@ -16,7 +16,10 @@
       {% endif %}
       <a href="#contact">Contact</a>
       {% if location != 'classes' %}
-      <a href="classes">Classes</a>
+      <a href="classes">Gym Classes</a>
+      {% endif %}
+      {% if location != 'online-classes' %}
+      <a href="online-classes">Online Classes</a>
       {% endif %}
       <a href="/#services">Services</a>
       {% if location != 'events' %}
@@ -45,9 +48,16 @@
       <a href="#contact">Contact</a>
     </div>
   </div>
-  {% if location != 'classes' %}
-  <a href="classes">Classes</a>
-  {% endif %}
+  <div class="dropdown">
+    <a>Classes</a>
+    <div class="dropdown-content">
+      {% if location != 'classes' %}
+      <a href="classes">Gym Classes</a>
+      {% endif %} {% if location != 'online-classes' %}
+      <a href="online-classes">Online Classes</a>
+      {% endif %}
+    </div>
+  </div>
   <a href="/#services">Services</a>
   {% if location != 'events' %}
   <a href="events">Events</a>

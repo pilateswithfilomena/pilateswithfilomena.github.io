@@ -20,7 +20,7 @@
 
     {% with location='classes' %} {% include 'menu.jinja' %} {% endwith %}
 
-    <img src="photos/andrea-piacquadio-868483-pexels.jpg" alt="class" style="width: 100%" />
+    <img src="photos/andrea-piacquadio-868483-pexels.jpg" alt="class" style="width: 100%" class="image-header" />
 
     <div class="container" style="padding-bottom: 20px">
       <h1 class="secondary-title" style="padding-top: 0">Pilates Classes</h1>
@@ -56,6 +56,15 @@
 
     <div class="cards-flex-container">
       <div class="card">
+        <h3>1 Class</h3>
+        <div class="price">£10</div>
+        <ul>
+          <li>24 hour cancellation</li>
+        </ul>
+        <a href="buy-classes?option=1-class" class="buy-link">Book Now</a>
+      </div>
+
+      <div class="card">
         <h3>Welcome Offer:<br />Buy 2 get 1 free</h3>
         <div class="price">
           £20
@@ -68,27 +77,6 @@
           <li>1 month expiration</li>
         </ul>
         <a href="buy-classes?option=welcome-pack" class="buy-link">Book Now</a>
-      </div>
-
-      <div class="card">
-        <h3>1 Class</h3>
-        <div class="price">£10</div>
-        <ul>
-          <li>24 hour cancellation</li>
-        </ul>
-        <a href="buy-classes?option=1-class" class="buy-link">Book Now</a>
-      </div>
-
-      <div class="card">
-        <h3>1 Class - Eventbrite</h3>
-        <div class="price">£11.55</div>
-        <ul>
-          <li>24 hour cancellation</li>
-          <li>Price includes Eventbrite non-refundable £1.55 booking fee</li>
-        </ul>
-        <a href="https://pilateswithfilomena.eventbrite.co.uk/" class="buy-link" target="_blank"
-          >Book on Eventbrite<svg><use href="#external-link-icon"></use></svg>
-        </a>
       </div>
 
       <div class="card">
@@ -120,6 +108,18 @@
       </div>
 
       <div class="card">
+        <h3>1 Class - Eventbrite</h3>
+        <div class="price">£11.55</div>
+        <ul>
+          <li>24 hour cancellation</li>
+          <li>Price includes Eventbrite non-refundable £1.55 booking fee</li>
+        </ul>
+        <a href="https://pilateswithfilomena.eventbrite.co.uk/" class="buy-link" target="_blank"
+          >Book on Eventbrite<svg><use href="#external-link-icon"></use></svg>
+        </a>
+      </div>
+
+      <div class="card">
         <h3>Wembley Fitness App</h3>
         <ul>
           <li>Listed as <i>Pilates (Contrology)</i></li>
@@ -131,16 +131,6 @@
           </svg>
         </a>
       </div>
-
-      <!--
-      <div class="card" style="justify-content: flex-start !important">
-        <h3>Intro to Pilates Pack</h3>
-        <ul style="flex-grow: 0">
-          <li>Learn the basics of Pilates</li>
-        </ul>
-        <h1 style="font-size: 3em; text-align: center; width: 100%">Coming soon!</h1>
-      </div>
-      -->
     </div>
 
     <br />

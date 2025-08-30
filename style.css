@@ -312,6 +312,10 @@ h3 a:active {
 }
 
 @media screen and (max-width: 600px) {
+  .image-header {
+    padding-top: 47px;
+  }
+
   .quote {
     font-size: 1.5em;
   }
