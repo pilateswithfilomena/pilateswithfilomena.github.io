@@ -96,6 +96,41 @@ li:not(:last-child) {
   -webkit-backdrop-filter: blur(10px);
 }
 
+#sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(150, 0, 150, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+#sidenav a {
+  text-decoration: none;
+  display: block;
+  transition: 0.1s;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+#sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+}
+
 #full-nav {
   position: fixed;
   width: 100%;

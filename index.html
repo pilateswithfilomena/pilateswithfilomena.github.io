@@ -14,6 +14,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="style.css" />
+<script>
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0";
+}
+</script>
     <link rel="canonical" href="https://pilateswithfilomena.com" />
     <meta name="google-site-verification" content="IXqdbBtoTW0tTgTtKEogu_P3-Ug7OimeS41MZ76JHpA" />
     <meta
@@ -31,32 +39,33 @@
   <body class="primary">
      <!-- MENU -->
 <nav id="mini-nav">
-  <div class="dropdown">
-    <span id="nav-icon">≡</span>
-    <div class="dropdown-content">
-       
-      <a href="about-filomena">About Filomena</a>
-       
-      <a href="our-mission">Our Mission</a>
-       
-      <a href="about-pilates">What is Pilates?</a>
-       
-      <a href="about-faq">FAQ</a>
-      
-      <a href="#contact">Contact</a>
-      
-      <a href="classes">Gym Classes</a>
-      
-      
-      <a href="online-classes">Online Classes</a>
-      
-      <a href="/#services">Services</a>
-      
-      <a href="events">Events</a>
-      
-    </div>
-  </div>
+  <!-- &#9776; -->
+  <span id="nav-icon" onclick="openNav()">≡</span>
 </nav>
+<div id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="classes">Gym Classes</a>
+  
+  
+  <a href="online-classes">Online Classes</a>
+  
+  <a href="/#services" onclick="closeNav()">Services</a>
+  
+  <a href="events">Events</a>
+  
+   
+  <a href="about-filomena">About Filomena</a>
+   
+  <a href="our-mission">Our Mission</a>
+   
+  <a href="about-pilates">What is Pilates?</a>
+   
+  <a href="about-faq">FAQ</a>
+  
+  <a href="#contact" onclick="closeNav()">Contact</a>
+</div>
+
 
 <nav id="full-nav">
   
