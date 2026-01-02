@@ -42,6 +42,7 @@ body {
   margin-bottom: 0.5em;
   color: black;
 }
+
 .secondary-sub-title {
   font-size: 1.5em;
   margin-bottom: 0.5em;
@@ -85,6 +86,7 @@ li {
   line-height: 1.5;
   color: black;
 }
+
 li:not(:last-child) {
   margin-bottom: 0.5em;
 }
@@ -111,6 +113,7 @@ li:not(:last-child) {
   transition: 0.1s;
   padding-top: 60px;
 }
+
 #sidenav a {
   text-decoration: none;
   display: block;
@@ -150,7 +153,7 @@ li:not(:last-child) {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.1em;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
 }
 
@@ -172,11 +175,16 @@ li:not(:last-child) {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.1em;
-  text-align: center;
+  text-align: left;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   overflow: hidden;
+}
+
+.dropdown-content.right {
+  right: 0;
+  left: auto;
 }
 
 .dropdown-content a {
@@ -184,6 +192,7 @@ li:not(:last-child) {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
   transition: background-color 0.3s ease;
   white-space: nowrap;
 }
@@ -194,7 +203,8 @@ li:not(:last-child) {
 }
 
 .banner {
-  padding-top: 47px; /* for nav bar */
+  /* for nav bar */
+  padding-top: 47px;
   width: 100%;
   height: 50vh;
   background-color: rgb(180, 0, 180);
@@ -229,6 +239,7 @@ li:not(:last-child) {
   text-align: center !important;
   font-size: clamp(1rem, 2vw, 3rem);
 }
+
 /* --- scrolling-banner --- */
 
 .no-style-link {
@@ -281,6 +292,17 @@ li:not(:last-child) {
   margin: 20px;
 }
 
+.instagram-link {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.instagram-link svg {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 .quote {
   padding-top: 40px;
   padding-left: 20px;
@@ -325,7 +347,8 @@ body.secondary p {
 }
 
 #mini-nav {
-  display: none; /* Hide by default */
+  /* Hide by default */
+  display: none;
 }
 
 h3 {
@@ -581,8 +604,7 @@ h3 a:active {
   max-width: 350px;
 }
 
-.subscribe-email {
-}
+.subscribe-email {}
 
 .subscribe-button {
   background-color: rgb(180, 0, 180);
