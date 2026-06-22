@@ -317,7 +317,7 @@ li:not(:last-child) {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #services {
@@ -604,7 +604,8 @@ h3 a:active {
   max-width: 350px;
 }
 
-.subscribe-email {}
+.subscribe-email {
+}
 
 .subscribe-button {
   background-color: rgb(180, 0, 180);
